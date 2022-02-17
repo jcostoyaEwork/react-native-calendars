@@ -536,6 +536,7 @@ class ExpandableCalendar extends Component<ExpandableCalendarProps, State> {
     // TODO: turn to TouchableOpacity with onPress that closes it
     return (<TouchableOpacity style={this.style.knobContainer} pointerEvents={'none'} testID={`${this.props.testID}-knob`} onPress={() => {this.bounceToPosition(this.state.position === Positions.OPEN ? this.closedHeight: this.openHeight)} }activeOpacity={1}>
         <View style={this.style.knob} testID={CALENDAR_KNOB}/>
+        <View style={this.style.knobBottom}/>
       </TouchableOpacity>);
   }
 
