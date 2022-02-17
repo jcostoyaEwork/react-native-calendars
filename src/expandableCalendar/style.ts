@@ -40,14 +40,19 @@ export default function styleConstructor(theme: Theme = {}) {
       height: KNOB_CONTAINER_HEIGHT,
       bottom: 0,
       alignItems: 'center',
-      justifyContent: 'center',
-      backgroundColor: appStyle.calendarBackground
+      justifyContent: 'flex-end',
+      backgroundColor: "transparent"
     },
     knob: {
       width: 40,
       height: 4,
       borderRadius: 3,
       backgroundColor: '#e8ecf0'
+    },
+    knobBottom: {
+        alignSelf: "stretch",
+        backgroundColor: "white",
+        height: 8
     },
     sectionText: {
       fontWeight: 'bold', 
